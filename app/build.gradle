@@ -55,6 +55,5 @@ dependencies {
     implementation 'com.google.guava:guava:22.0'
     implementation 'com.google.android.play:core:1.7.2'
     implementation 'org.matrix.android:matrix-android-sdk2:1.5.1'
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-core:4.0.0'
-    implementation 'org.apache.logging.log4-core:2.14.1'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-core:+'
 }
