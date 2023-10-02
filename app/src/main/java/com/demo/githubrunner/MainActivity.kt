@@ -10,6 +10,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.demo.githubrunner.databinding.ActivityMainBinding
+import android.R.menu
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +36,15 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
+        testVulnerability()
+    }
+
+    fun testVulnerability() {
+        val url = URL("http://www.google.com")
+        val urlConnection: HttpURLConnection = url.openConnection() as HttpURLConnection
+        urlConnection.connect()
+        val `in`: InputStream = urlConnection.getInputStream()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
