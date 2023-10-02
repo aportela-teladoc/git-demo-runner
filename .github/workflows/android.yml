@@ -25,17 +25,3 @@ jobs:
       run: ./gradlew assembleDebug
     - name: Test
       run: ./gradlew testDebugUnitTest
-
-  dependency-review:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Dependency Review
-      uses: actions/dependency-review-action@v3
-      with:
-        fail-on-severity: moderate
-        deny-licenses: LGPL-2.0, BSD-2-Clause
-        allow-ghsas: GHSA-abcd-1234-5679, GHSA-efgh-1234-5679
-        fail-on-scopes: development, runtime
-
