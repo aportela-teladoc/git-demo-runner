@@ -29,5 +29,5 @@ jobs:
     needs: build
     steps:
       - name: Test
-          run: ./gradlew testDebugUnitTest
+        run: ./gradlew testDebugUnitTest
 
