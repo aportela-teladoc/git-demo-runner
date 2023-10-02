@@ -49,5 +49,5 @@ dependencies {
 
     implementation 'org.apache.commons:commons-collections4:4.1'
     implementation 'org.apache.httpcomponents:httpcore:4.4.1'
-    implementation 'com.google.guava:guava:14.0'
+    implementation 'com.appbrain:appbrain-sdk:11.20'
 }
