@@ -11,8 +11,8 @@ import android.view.Menu
 import android.view.MenuItem
 import com.demo.githubrunner.databinding.ActivityMainBinding
 import android.R.menu
-
-
+import java.net.HttpURLConnection
+import java.net.URL
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,10 +41,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun testVulnerability() {
-        val url = URL("http://www.google.com")
+//        val url = HttpURLConnection("http://www.google.com")
+//        val urlConnection: HttpURLConnection = url.openConnection() as HttpURLConnection
+//        urlConnection.connect()
+//        val `in`: InputStream = urlConnection.getInputStream()
+
+        val url = URL("http://www.android.com/")
         val urlConnection: HttpURLConnection = url.openConnection() as HttpURLConnection
         urlConnection.connect()
-        val `in`: InputStream = urlConnection.getInputStream()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
