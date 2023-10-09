@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - chmod +x gradlew
+      - chmod +x ./gradlew
       - ./gradlew assembleDebug
       - ./gradlew testDebugUnitTest
 artifacts:
