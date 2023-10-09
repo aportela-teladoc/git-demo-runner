@@ -41,10 +41,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun testVulnerability() {
-//        val url = HttpURLConnection("http://www.google.com")
-//        val urlConnection: HttpURLConnection = url.openConnection() as HttpURLConnection
-//        urlConnection.connect()
-//        val `in`: InputStream = urlConnection.getInputStream()
 
         val url = URL("http://www.android.com/")
         val urlConnection: HttpURLConnection = url.openConnection() as HttpURLConnection
