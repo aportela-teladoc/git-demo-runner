@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - ./license_accepter.sh
       - chmod +x ./gradlew
       - ./gradlew assembleDebug
       - ./gradlew testDebugUnitTest
