@@ -16,6 +16,13 @@ phases:
       - chmod +x ./gradlew
       - ./gradlew assembleDebug
       - ./gradlew testDebugUnitTest
+
+cache:
+  paths:
+    - '/root/.gradle/caches/**/*'
+    - '.gradle/**/*'
+    - '/root/.gradle/wrapper/**/*'
+
 artifacts:
   files:
     - 'app/build/outputs/**/*.apk'
